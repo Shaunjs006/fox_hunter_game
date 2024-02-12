@@ -11,3 +11,8 @@ From the second day, the fox can only choose from the most closest hole to sleep
 Hunter have one chance to guess where the fox is.
 
 When Hunter catched the fox, game over.
+
+For fox_game_ai.py and agent.py file:
+The purpose of these file is to use reinforcement learning to find the most ideal or perfect ways to catch the fox.
+
+12/02/2024 update: first version written by chatgpt, not really work as expected
