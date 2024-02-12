@@ -35,7 +35,6 @@ guess_count = 1
 
 # Fox and Holes positions (for simplicity, using numbers)
 fox_position = random.randint(1, HOLES)
-guess_count = 0
 reward = 0
 
 agent = RlAgent(HOLES, HOLES)
@@ -73,7 +72,7 @@ while running:
 
     # Check for game over condition
     for event in pygame.event.get():
-        if event.type == pygame.QUIT:
+        if event.type == pygame.QUIT or guess_count > 6:
             running = False
         elif player_guess == fox_position:
             print("Fox caught! Game Over. Total Guesses:", guess_count)
